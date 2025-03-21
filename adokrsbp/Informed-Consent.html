@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informed Consent - RSUD Bumi Panua</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            border: 1px solid black;
+        }
+
+        .logo-container {
+            position: relative;
+            width: 60px;
+            text-align: center;
+        }
+
+        .logokn {
+            width: 50px;
+            height: 50px;
+            margin: 20px 50px 10px -5px;
+        }
+
+        .logokr {
+            width: 50px;
+            height: 50px;
+            margin: 15px;
+        }
+
+        .logo-code {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 12px;
+            padding: 2px 5px 5px 5px;
+        }
+
+        .hospital-name {
+            text-align: center;
+            flex-grow: 1;
+            margin: 0 20px;
+            padding: 10px 0;
+        }
+
+        .hospital-name h2 {
+            font-size: 16px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .hospital-name p {
+            font-size: 12px;
+            margin: 5px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        td {
+            height: 25px;
+        }
+
+        .form-row {
+            display: flex;
+            border: 1px solid black;
+            margin-bottom: -1px;
+        }
+
+        .form-label {
+            padding: 5px;
+            border-right: 1px solid black;
+            min-width: 150px;
+            background: #fff;
+        }
+
+        .form-value {
+            flex: 1;
+            padding: 5px;
+        }
+
+        .multi-field {
+            display: flex;
+            border-top: 1px solid black;
+        }
+
+        .multi-field>div {
+            flex: 1;
+            padding: 5px;
+            border-right: 1px solid black;
+        }
+
+        .multi-field>div:last-child {
+            border-right: none;
+        }
+
+        .signature-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .signature-box {
+            text-align: center;
+            width: 30%;
+        }
+
+        .signature-line {
+            border-bottom: 1px solid black;
+            margin: 40px 0 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="border: 2px solid black; margin-bottom: -1px;" class="header">
+        <div class="logo-container">
+            <img src="logo-kiri.png" alt="Logo Kiri" class="logokr">
+        </div>
+        <div style="border-right: 1px solid black; border-left: 1px solid black;" class="hospital-name">
+            <h2>PEMERINTAH KABUPATEN POHUWATO</h2>
+            <h2>RUMAH SAKIT UMUM DAERAH BUMI PANUA</h2>
+            <p>Jl. dr. Herizal Umar Desa Botubilotahu Kec. Marisa Kode Pos 96266</p>
+        </div>
+        <div class="logo-container">
+            <span class="logo-code">RM.1.C/IGD</span>
+            <img src="logo-kanan.png" alt="Logo Kanan" class="logokn">
+        </div>
+    </div>
+    <div style="border: 2px solid black; background-color: #f0f0f0;">
+        <h4 style="text-align: center; margin: 2px 0;">INFORMED CONSENT</h4>
+    </div>
+    <div style="border: 1px solid black; margin-bottom: -1px;">
+        <table style="margin-bottom: -1px;">
+            <tr>
+                <td style="width: 150px; border-right: 1px solid black;">No. Rekam Medis</td>
+                <td style="width: 300px; border-right: 1px solid black;"></td>
+                <td style="width: 100px; border-right: 1px solid black;">Pendidikan</td>
+                <td>Ruangan</td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="border: 1px solid black; margin-bottom: -1px;">
+        <table style="margin-bottom: -1px;">
+            <tr>
+                <td style="width: 150px; border-right: 1px solid black;">Nama Lengkap</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="border: 1px solid black; margin-bottom: -1px;">
+        <table style="margin-bottom: -1px; width: 100%;">
+            <tr>
+                <td style="width: 150px; border-right: 1px solid black;">Tanggal Lahir</td>
+                <td style="width: 100px; border-right: 1px solid black;">Sex</td>
+                <td style="width: 100px; border-right: 1px solid black;">Gol. Darah</td>
+                <td style="width: 100px; border-right: 1px solid black;">Status Kawin</td>
+                <td style="width: 100px; border-right: 1px solid black;">Agama</td>
+                <td>Pekerjaan</td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="border: 1px solid black; margin-bottom: -1px;">
+        <table style="margin-bottom: -1px;">
+            <tr>
+                <td style="border-bottom: 0;">Alamat Lengkap & Nomor Telepon</td>
+            </tr>
+            <tr>
+                <td style="border-top: 0;"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="border: 1px solid black; margin-bottom: -1px;">
+        <table style="margin-bottom: -1px;">
+            <tr>
+                <td style="width: 350px; border-right: 0;">Dokter Pelaksana Tindakan</td>
+                <td style="border-left: 0;">: </td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="border: 1px solid black; margin-bottom: -1px;">
+        <table style="margin-bottom: -1px;">
+            <tr>
+                <td style="width: 350px; border-right: 0;">Pemberi Informasi</td>
+                <td style="border-left: 0;">: </td>
+            </tr>
+        </table>
+    </div>
+    <div style="border: 1px solid black; margin-bottom: -1px;">
+        <table style="margin-bottom: -1px;">
+            <tr>
+                <td style="width: 350px; border-right: 0;">Penerima Informasi/Pemberi Persetujuan*</td>
+                <td style="border-left: 0;">: </td>
+            </tr>
+        </table>
+    </div>
+    <div style="border: 1px solid black; margin-bottom: -1px;">
+        <table>
+            <tr>
+                <th style="width: 40px; text-align: center;">No.</th>
+                <th style="width: 200px;">JENIS INFORMASI</th>
+                <th>ISI INFORMASI</th>
+                <th style="width: 140px;">PARAF</th>
+            </tr>
+            <tr>
+                <td style="text-align: center;">1</td>
+                <td>Diagnosa (WD/DD)</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">2</td>
+                <td>Tindakan Medis</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">3</td>
+                <td>Indikasi Tindakan</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">4</td>
+                <td>Tata Cara</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">5</td>
+                <td>Tujuan</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">6</td>
+                <td>Resiko</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">7</td>
+                <td>Komplikasi</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">8</td>
+                <td>Prognosis</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">9</td>
+                <td>Alternatif & Resiko</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">10</td>
+                <td>Manfaat</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div style="border: 1px solid black; margin-bottom: -1px;">
+        <table style="margin-bottom: -1px; border-collapse: collapse;">
+            <tr>
+                <td style="border: 1px solid black;">
+                    <div>Dengan ini menyatakan bahwa saya telah menerangkan hal-hal di atas secara jelas dan benar serta
+                        memberikan kesempatan bertanya dan/atau berdiskusi</div>
+
+                </td>
+                <td style="border: 1px solid black;">
+                    <div style="display: flex; justify-content: flex-end; margin-top: 10px;">
+                        <div style="text-align: center;">
+                            <div>Dokter</div>
+                            <div style="margin-top: 30px;">(.............................)</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">
+                    <div>Dengan ini menyatakan bahwa saya telah menerima informasi sebagaimana diatas yang saya beri
+                        tanda paraf dikolom kanannya dan telah memahaminya.</div>
+
+                </td>
+                <td style="border: 1px solid black;">
+                    <div style="display: flex; justify-content: flex-end; margin-top: 10px;">
+                        <div style="text-align: center;">
+                            <div>Pasien/Wali</div>
+                            <div style="margin-top: 30px;">(.............................)</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="border: 2px solid black; margin-bottom: -1px;">
+        <p><i>*Bila pasien tidak kompeten atau tidak mau menerima informasi, maka penerima informasi adalah
+                wali/keluarga terdekat</i></p>
+    </div>
+    <div style="border: 1px solid black; margin-bottom: -1px;">
+        <table style="margin-bottom: -1px; width: 100%;">
+            <tr>
+                <td colspan="2" style="font-weight: bold; text-align: center; padding: 5px;">PERSETUJUAN TINDAKAN
+                    KEDOKTERAN</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 5px; border-bottom: 0; text-align: justify;">
+                    Yang bertanda tangan dibawah ini, saya nama : ........................... Umur : ...... Tahun,
+                    Laki-laki/perempuan*, Alamat : ........................... 
+                    Dengan ini menyatakan persetujuan untuk dilakukan tindakan ...........................                   terhadap saya/anak/istri/suami/ayah/ibu/saudara kandung*/........................... Saya*
+                    bernama........................... umur...... Tahun, Laki-laki/Perempuan*, Alamat
+                    ........................... <br>
+                    Saya memahami perlunya dan manfaat tindakan tersebut sebagaimana telah dijelaskan seperti diatas
+                    kepada saya, termasuk resiko dan komplikasi yang mungkin timbul.<br>
+                    Saya juga menyadari bahwa oleh karena ilmu kedokteran bukanlah ilmu pasti, maka keberhasilan
+                    tindakan kedokteran bukanlah keniscayaan, melainkan sangat bergantung kepada izin Tuhan Yang Maha
+                    Esa.
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: right; padding: 10px; border-top: 0; border-bottom: 0;">
+                    Marisa,........................... <br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="border-top: 0;">
+                    <table style="width: 100%; border: none;">
+                        <tr>
+                            <td style="width: 33%; text-align: center; border: none; border-top: 0;">
+                                Saksi I<br><br><br><br>
+                                (............................)<br>
+                                <i>Tanda Tangan & Nama Terang</i>
+                            </td>
+                            <td style="width: 33%; text-align: center; border: none; border-top: 0;">
+                                Saksi II<br><br><br><br>
+                                (............................)<br>
+                                <i>Tanda Tangan & Nama Terang</i>
+                            </td>
+                            <td style="width: 33%; text-align: center; border: none; border-top: 0;">
+                                Yang Menyatakan<br><br><br><br>
+                                (............................)<br>
+                                <i>Tanda Tangan & Nama Terang</i>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="font-size: 12px; font-style: italic; margin-top: 5px;">
+        Keterangan: (*) coret yang tidak perlu
+    </div>
+</body>
+
+</html>
