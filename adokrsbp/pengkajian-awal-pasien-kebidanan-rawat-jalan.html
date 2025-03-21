@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengkajian Awal Pasien Kebidanan Rawat Jalan - RSUD Bumi Panua</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #fff;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 21cm;
+            margin: 0 auto;
+            border: 1px solid #000;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-left,
+        .logo-right {
+            width: 60px;
+            height: 60px;
+        }
+
+        .document-code {
+            position: relative;
+            text-align: right;
+            font-weight: bold;
+            font-size: 11px;
+        }
+
+        .header-text {
+            flex-grow: 1;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .header-text h1 {
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .header-text p {
+            font-size: 11px;
+            margin: 2px 0;
+        }
+
+        .form-title {
+            background-color: #333;
+            color: white;
+            padding: 8px;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+        }
+
+        /* Data Pasien Table */
+        .patient-data {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .patient-data td {
+            border: 1px solid #000;
+            padding: 5px;
+        }
+
+        .patient-data .label {
+            width: 150px;
+            font-weight: normal;
+        }
+
+        /* Section Tables */
+        .section-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .section-table th,
+        .section-table td {
+            border: 1px solid #000;
+            padding: 5px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            background-color: #fff;
+            border: 1px solid #000;
+            padding: 5px;
+        }
+
+        /* Menstruasi Table */
+        .menstruasi-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .menstruasi-table td {
+            border: 1px solid #000;
+            padding: 5px;
+        }
+
+        /* Checkbox Table */
+        .checkbox-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .checkbox-table td {
+            border: 1px solid #000;
+            padding: 5px;
+        }
+
+        /* Signature Table */
+        .signature-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .signature-table td {
+            border: 1px solid #000;
+            padding: 5px;
+            height: 80px;
+            vertical-align: top;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 1024px) {
+            .form-field {
+                max-width: calc(50% - 10px);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .form-field {
+                max-width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .logo-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .header-text {
+                padding: 10px 0;
+            }
+
+            .form-field {
+                flex: 0 0 100%;
+                min-width: 100%;
+            }
+
+            .signature {
+                padding-right: 20px;
+            }
+        }
+
+        @media print {
+            .container {
+                width: 210mm;
+                padding: 10mm;
+            }
+        }
+
+        .header {
+            border: 1px solid #000;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="document-code">RM 5/RJ</div>
+            <div class="logo-container">
+                <img src="logo-kiri.png" alt="Logo Pemkab" class="logo-left">
+                <div class="header-text">
+                    <h1>PEMERINTAH KABUPATEN POHUWATO</h1>
+                    <h1>RUMAH SAKIT UMUM DAERAH BUMI PANUA</h1>
+                    <p>Jl. dr. Herizal Umar Desa Botubilotahu Kec. Marisa Kode Pos 96266</p>
+                </div>
+                <img src="logo-kanan.png" alt="Logo RS" class="logo-right">
+            </div>
+        </div>
+        <div class="form-title">PENGKAJIAN AWAL PASIEN KEBIDANAN RAWAT JALAN</div>
+
+        <!-- Data Pasien dalam format tabel -->
+        <table class="patient-data">
+            <tr>
+                <td class="label" colspan="4">No. Rekam Medis</td>
+                <td class="label" colspan="2">Pendidikan</td>
+            </tr>
+            <tr>
+                <td class="label" colspan="6">Nama Lengkap</td>
+            </tr>
+            <tr>
+                <td>Tgl Lahir</td>
+                <td>Sex</td>
+                <td>Gol. Darah</td>
+                <td>Status Kawin</td>
+                <td>Agama</td>
+                <td>Pekerjaan</td>
+            </tr>
+            <tr>
+                <td style="border: 0px 0px 0px 1px;"><br></td>
+                <td style="border: 0px 0px 0px 0px;"><br></td>
+                <td style="border: 0px 0px 0px 0px;"><br></td>
+                <td style="border: 0px 0px 0px 0px;"><br></td>
+                <td style="border: 0px 0px 0px 0px;"><br></td>
+                <td style="border: 0px 1px 0px 0px;"><br></td>
+            </tr>
+            <tr>
+                <td colspan="6" class="label" style="border: 0px 0px 0px 1px;">Alamat Lengkap dan Nomor Telepon</td>
+            </tr>
+        </table>
+
+        <!-- Riwayat Kehamilan -->
+        <div class="section-title">RIWAYAT KEHAMILAN DAN PERSALINAN</div>
+        <table class="section-table">
+            <tr>
+                <th>No</th>
+                <th>Nama Suami</th>
+                <th>Jenis Persalinan</th>
+                <th>Penolong</th>
+                <th>BBL</th>
+                <th>Jenis Kelamin</th>
+                <th>Usia Sekarang</th>
+                <th>Keterangan</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <!-- Riwayat Menstruasi -->
+        <div class="section-title">RIWAYAT MENSTRUASI</div>
+        <table class="menstruasi-table">
+            <tr>
+                <td>HPT : ...........................</td>
+                <td>TP : ...........................</td>
+            </tr>
+            <tr>
+                <td>Menarche : ...........................</td>
+                <td>Nyeri/Tidak : ...........................</td>
+            </tr>
+            <tr>
+                <td>Lama Haid : ...........................</td>
+                <td>Banyak : ...........................</td>
+            </tr>
+            <tr>
+                <td colspan="2">Siklus Haid : Teratur/Tidak ........................... Hari</td>
+            </tr>
+            <tr>
+                <td colspan="2">Fluor Albus : □ Ya/Tidak □ Gatal/Tidak □ Berbau/Tidak</td>
+            </tr>
+        </table>
+
+        <!-- Riwayat KB -->
+        <div class="section-title">RIWAYAT KB</div>
+        <table class="section-table">
+            <tr>
+                <th>No</th>
+                <th>Jenis Alkon</th>
+                <th>Tahun Lepas</th>
+                <th>Keluhan</th>
+                <th>Alasan Lepas</th>
+                <th>Keterangan</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <!-- Riwayat Penyakit -->
+        <div class="section-title">RIWAYAT PENYAKIT</div>
+        <table class="checkbox-table">
+            <tr>
+                <td>
+                    □ Jantung □ Ginjal □ TB □ Tumor Kandungan □ HIV<br>
+                    □ DM □ Hipertensi □ Asma □ Penyakit Kelamin □ Lain-lain..............
+                </td>
+            </tr>
+        </table>
+
+        <!-- Pemeriksaan Lain -->
+        <table class="section-table">
+            <tr>
+                <td>Pemeriksaan Lain :
+                    ...................................................................................................................
+                </td>
+            </tr>
+            <tr>
+                <td>...........................................................................................................................................
+                </td>
+            </tr>
+            <tr>
+                <td>...........................................................................................................................................
+                </td>
+            </tr>
+        </table>
+
+        <!-- Tanda Tangan -->
+        <table class="signature-table">
+            <tr>
+                <td style="border-right: 0px ;" width="60%"></td>
+                <td style="border-left: 0px; text-align: center;" width="40%">
+                    Marisa, ........................ 20....<br>
+                    Bidan<br><br><br>
+                    (....................................)
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
